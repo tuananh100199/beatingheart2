@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+span{
+    background: url(https://cdn2.iconfinder.com/data/icons/lin/128/14.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /*--------------Third------------*/
+    animation: animation 7s linear;
+}
+.bg {
+    /* The image used */
+    background-image: url("img.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+body div{
+    font-family: emoji;
+    vertical-align: bottom;
+    color: cadetblue;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    /* margin-right: auto; */
+    /* width: 100px; */
+    /* position: absolute; */
+    bottom: 0px;
+}
+body div i{
+    color: red;  
+}
+@keyframes animation{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        /*-------Fourth----------*/
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        /*-------Fourth----------*/
+        filter: hue-rotate(720deg);
+    }
+}
